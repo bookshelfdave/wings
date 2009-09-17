@@ -119,8 +119,7 @@ export_1(Filename, Contents0, Attr) ->
 		   value='http://www.collada.org/2005/11/COLLADASchema'}],
     Collada = #xmlElement{name='COLLADA',content=ColladaNodes,
 			  attributes=ColladaAtts},
-    FileContents = xmerl:export_simple([Collada], xmerl_xml),
-    
+    FileContents = xmerl:export_simple([Collada], xmerl_xml),    
     file:write_file(Filename, FileContents ++ "\n"),
     ok.
 
