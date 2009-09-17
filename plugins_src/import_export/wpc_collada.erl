@@ -203,9 +203,9 @@ make_scene_node(ObjName, ObjMats) ->
     BM = {bind_material,[],[TC]},
     IG = {instance_geometry,[{url,"#" ++ ObjName}],[BM]},
     Translate = {translate,[{sid,"translate"}],["0.00000 0.00000 0.00000"]},
-    RotateZ = {rotate,[{sid,"rorateZ"}],["0 0 1 0.00000"]},
-    RotateY = {rotate,[{sid,"rorateY"}],["0 1 0 0.00000"]},
-    RotateX = {rotate,[{sid,"rorateX"}],["1 0 0 0.00000"]},
+    RotateZ = {rotate,[{sid,"rotateZ"}],["0 0 1 0.00000"]},
+    RotateY = {rotate,[{sid,"rotateY"}],["0 1 0 0.00000"]},
+    RotateX = {rotate,[{sid,"rotateX"}],["1 0 0 0.00000"]},
     Scale   = {scale,[{sid,"scale"}],["1.0000 1.0000 1.0000"]},
     {node,[{layer,"L1"},{id,ObjName},{name,ObjName}],
      [Translate,RotateZ,RotateY,RotateX,Scale,IG]}.
